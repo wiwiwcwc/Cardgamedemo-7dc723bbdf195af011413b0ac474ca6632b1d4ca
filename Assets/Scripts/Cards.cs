@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
+//暂时没用
 [CreateAssetMenu(fileName = "New Card", menuName ="Card") ]
 public class Card : ScriptableObject {
 

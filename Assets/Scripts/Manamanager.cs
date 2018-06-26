@@ -18,7 +18,7 @@ public class Manamanager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        var manadisplay = GameObject.Find("ManaDisplay");
-        manadisplay.GetComponent<Text>().text = "" + CurrentMana + "/" + MaxMana;
+
+        manatext.text = "Mana " + CurrentMana + "/" + MaxMana;
     }
 }

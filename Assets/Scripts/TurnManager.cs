@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
+//管理行动顺序和回合开始结束的
+
 public class TurnManager : MonoBehaviour {
 
     public int turncount = 0;
@@ -66,21 +70,22 @@ public class TurnManager : MonoBehaviour {
         mana.CurrentMana = mana.MaxMana;
 
         GameObject.FindGameObjectWithTag("Deck").GetComponent<Decklist>().Draw(5);
+        Debug.Log(GameObject.FindGameObjectWithTag("Deck"));
 
 
         //轮流当家做主人
-        playerinaction = playerturncount % 2 ;
+        playerinaction = playerturncount % a.playercount ;
         a.player[playerinaction].SetActive(false);
         if (playerinaction + 1 == a.playercount)
         {
             playerinaction = 0;
             a.player[playerinaction].SetActive(true);
-            Debug.Log(playerinaction+"玩家启动");
+           // Debug.Log(playerinaction+"玩家启动");
         }
         else
         {
             a.player[playerinaction + 1].SetActive(true);
-            Debug.Log(playerinaction+1 + "玩家启动");
+           // Debug.Log(playerinaction+1 + "玩家启动");
 
         }
     }

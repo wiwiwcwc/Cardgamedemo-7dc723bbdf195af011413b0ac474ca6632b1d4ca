@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+//存储卡牌数据的
 public class Stats : MonoBehaviour {
 
     public Card card;

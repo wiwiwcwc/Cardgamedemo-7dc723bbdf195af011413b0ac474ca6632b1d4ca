@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+
+
+//存放敌人数据
 public class EnemyStats : MonoBehaviour {
 
     public int Maxhealth;

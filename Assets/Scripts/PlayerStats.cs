@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+//存玩家数据的
+
 public class PlayerStats : MonoBehaviour {
 
     public int maxhealth;
@@ -16,6 +19,9 @@ public class PlayerStats : MonoBehaviour {
     public Text nametext;
     public Text armortext;
 
+
+
+    //承受伤害 感觉不应该写在这里
     public void Takedamage(int damage){
         if (damage >= 0)
         {

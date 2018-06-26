@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
+//游戏启动的时候加载
 public class GameSetup : MonoBehaviour {
 
     // Use this for initializatioz
@@ -32,8 +35,6 @@ public class GameSetup : MonoBehaviour {
         decklist1.Addcard("SinisterStrike","FoK","FoK","FoK","FoK","FoK");
 
 
-       // decklist0.Draw(stats0.carddraw);
-       // decklist1.Draw(stats1.carddraw);
 
         decklist0.Shuffledeck();
         decklist1.Shuffledeck();
